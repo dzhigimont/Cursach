@@ -21,7 +21,11 @@ public class PricesForm extends BaseForm{
         super(By.xpath("//a[contains(text(),'По рейтингу продавца')]"),"Prices.Logo");
     }
 
-
+    /**
+     * AddInTheBassket
+     *this method adds the required product to the shopping cart
+     *
+     * @return void
     public void AddInTheBassket(){
         basketRadioButton.clickAndWait();
         addInTheBasket.clickAndWait();
