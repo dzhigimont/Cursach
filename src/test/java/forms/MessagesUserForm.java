@@ -21,7 +21,14 @@ public class MessagesUserForm extends BaseForm {
     public MessagesUserForm(){
          super(By.xpath("//h1[contains(text(),'Личные сообщения')]"),"Message.logo");
     }
-
+    /**
+     * navigate
+     *this method clicks on the button with the corresponding name
+     *
+     * @param button
+     *
+     * @return void
+     */
     public void navigate(String button){
 
         switch (button){
