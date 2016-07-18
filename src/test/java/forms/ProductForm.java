@@ -48,7 +48,7 @@ public class ProductForm extends BaseForm {
         int i = 1;
         ArrayList<String> url  =  getUrlImgProduct();
         for (String s:url){
-            doAssertFail(assertImage.assertImage(path+"/"+i+".jpg",assertImage.getImgByUrl(s)),
+            doAssertFail(assertImage.assertImage(path+i+".jpg",assertImage.getImgByUrl(s)),
                     path+"/"+i+".jpg"+" image fully complies with "+s,
                     path+"/"+i+".jpg"+" image fully not complies with "+s);
             i++;
