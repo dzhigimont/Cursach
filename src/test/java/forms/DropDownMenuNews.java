@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import webdriver.BaseForm;
 import webdriver.elements.Button;
 
-public class DropDownMenuNews 
+public class DropDownMenuNews {
 
     private Button technology = new Button(By.xpath("//div[@class='b-main-navigation__dropdown-title']/a[contains(text(),'Технологии')]"),"Technology");
     
