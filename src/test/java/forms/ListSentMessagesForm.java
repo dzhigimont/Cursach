@@ -17,7 +17,12 @@ public class ListSentMessagesForm extends BaseForm{
     public ListSentMessagesForm( ) {
         super(By.xpath("//span[contains(text(),'непрочитанные')]"),"ListSentMessages.Logo");
     }
-
+    /**
+     * clickTopMessage()
+     *this method click Top Message in the user output message
+     *
+     * @return void
+     */
     public void clickTopMessage(){
         clickTopMessage.clickAndWait();
     }
