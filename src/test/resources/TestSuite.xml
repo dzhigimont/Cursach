@@ -21,7 +21,7 @@
 		<parameter name="itemDescription" value="Хороший ноутбук не бит не крашен."/>
 		<parameter name="rate" value="1000000"/>
 		<parameter name="currency" value="старые рубли"/>
-		<parameter name="auction" value="true"/>
+		<parameter name="auction" value="false"/>
 
 		<classes>
 			<class name="tests.TestNewAd"/>
