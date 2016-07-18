@@ -29,15 +29,24 @@ public class AdForm extends BaseForm {
     }
 
     /**
+     * deleteAd()
+     *this method delete new add Ad 
      *
-     *this Class constructor
-     *
+     * @return void
      */
+
     public void deleteAd(){
 
         irrelevant.clickAndWait();
         irrelevantNew.clickAndWait();
     }
+     
+     /**
+     * assertParam
+     *this method assert Parametres in the new add Ad
+     *@param 
+     * @return void
+     */
 
     public  void assertParam(String category,String section,String head,String location,String itemDescription,
                              String rate,String currency,Boolean auction ){
