@@ -26,6 +26,12 @@ public class EditAdForm extends BaseForm {
         super(By.xpath("//h3[contains(text(),'Подробно опишите товар или услугу')]"),"EditAd.Logo");
     }
 
+     /**
+     * editAd
+     *this method edit Ad form
+     *
+     * @return void
+     */
 
     public void editAd(String head,String location,String itemDescription,String previewDescription,
                             String rate){
