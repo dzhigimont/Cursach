@@ -233,7 +233,7 @@ public abstract class BaseElement extends BaseEntity {
 		waitForIsElementPresent();
 		info(getLoc("loc.clicking"));
         if (browser.getDriver() instanceof JavascriptExecutor) {
-            
+	            ((JavascriptExecutor)browser.getDriver()).executeScript("arguments[0].scrollIntoView(true);",element);
 	        ((JavascriptExecutor)browser.getDriver()).executeScript("arguments[0].style.border='4px solid red'", element);
 	    }
 		element.click();
