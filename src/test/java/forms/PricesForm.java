@@ -26,6 +26,7 @@ public class PricesForm extends BaseForm{
      *this method adds the required product to the shopping cart
      *
      * @return void
+     */
     public void AddInTheBassket(){
         basketRadioButton.clickAndWait();
         addInTheBasket.clickAndWait();
