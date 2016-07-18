@@ -10,6 +10,12 @@ import java.util.List;
 public class GetCoordinatesByAddress extends BaseEntity {
 
 
+        /**
+     * getCoordinates
+     *this method find Coordinates by addres
+     *@param address 
+     * @return String[]
+     */
         public String[] getCoordinates (String address){
 
             String url = browser.getDriver().getCurrentUrl();
