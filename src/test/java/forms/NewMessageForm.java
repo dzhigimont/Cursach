@@ -20,14 +20,26 @@ public class NewMessageForm extends BaseForm {
     public NewMessageForm() {
         super(By.xpath("//span[contains(text(),'Предварительный просмотр')]"), "NewMessage.Logo");
     }
-
+    /**
+     * fillTheMessage()
+     *this method fill new Message form with needed param
+     *@param username 
+     * @param header
+     * @param text 
+     * @return void
+     */
     public void fillTheMessage(String username,String header,String text){
         whomSend.type(username);
         this.header.type(header);
         textMessage.type(text);
 
     }
-
+    /**
+     * sendMessage()
+     *this method send new Message
+     
+     * @return void
+     */
     public void sendMessage(){
         send.clickAndWait();
     }
