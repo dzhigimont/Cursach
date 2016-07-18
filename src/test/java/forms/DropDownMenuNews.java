@@ -9,7 +9,7 @@ public class DropDownMenuNews
     private Button technology = new Button(By.xpath("//div[@class='b-main-navigation__dropdown-title']/a[contains(text(),'Технологии')]"),"Technology");
     
     
-     *clickTechnology
+     /*clickTechnology
      *this method click button Technology
      *
      * @return void
