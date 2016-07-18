@@ -47,7 +47,7 @@ public class ApartmentForm extends BaseForm {
         String[] parse=new String[2] ;
         int i=0;
         while (m.find()){
-            parse[i]=m.group().substring(0,6);
+            parse[i]=m.group().substring(0,5);
             i++;
         }
 
@@ -64,8 +64,8 @@ public class ApartmentForm extends BaseForm {
      */
     public  void assertCoordinate(String[] parseOnliner,String[] parseMap){
         for (int i=0;i<2;i++){
-
-            doAssertFail(parseMap[i].substring(0,6).contains(parseOnliner[i]),
+            String str = arseMap[i].substring(0,5)
+            doAssertFail(.contains(parseOnliner[i]),
                     "Coordinate "+parseOnliner[i]+" corresponds to "+parseMap[i],
                     "Coordinate "+parseOnliner[i]+" NOT corresponds to "+parseMap[i]);
 
