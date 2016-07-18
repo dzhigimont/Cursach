@@ -5,7 +5,7 @@
 	
 	<test name="test6" >
 		<parameter name="search" value="пылесос Samsung SC6573"/>
-		<parameter name="path" value="\\src\\resources\\img\Samsung SC6573"/>
+		<parameter name="path" value="src/resources/img/Samsung SC6573"/>
 
 		<classes>
 			<class name="tests.TestPresentFotoProduct"/>
