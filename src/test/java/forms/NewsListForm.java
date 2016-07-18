@@ -21,6 +21,7 @@ public class NewsListForm extends BaseForm {
      *this method clicks first link in the list news
      *
      * @return void
+     */
     public void clickFirstNews(){
         logger.info("==========The title news==========");
         logger.info(newsList.getElementOfPage(0).getText());
