@@ -21,7 +21,7 @@ public class ApartmentForm extends BaseForm {
         super(By.xpath("//div[contains(@class,'leaflet-marker-icon')]"),"Apartment.Logo");
     }
 
-    **
+    /**
      * getStreet()
      *this method find addres in the catalog
      *
@@ -34,7 +34,7 @@ public class ApartmentForm extends BaseForm {
     }
 
 
-    **
+    /**
      * getCoordinate()
      *this method find coordinates by addres in the catalog
      *@param product = 'Iphone 5'
