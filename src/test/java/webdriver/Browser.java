@@ -77,6 +77,10 @@ import com.google.common.base.Strings;
 		return instance != null;
 	}
 
+	/**
+	 * Checks is BaseUrl()
+	 * @return String url
+	 */
 	public static String getBaseUrl(){
 		return System.getProperty("urlLoginPage", props.getProperty("urlLoginPage"));
 	}
