@@ -7,9 +7,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class AssertImage {
-//static int nomer =1;
 
-
+     /**
+     * assertImage()
+     *this method assert two Image full match pixels
+     *@param path = d:/img/i.jpg
+     *@param image2
+     * @return boolean = true
+     */
     public boolean assertImage(String path,BufferedImage image2) throws IOException {
 
         File file1 = new File(path);
@@ -40,7 +45,13 @@ public class AssertImage {
     }
 
 
-
+    /**
+     * getImgByUrl()
+     *this method get Image by url 
+     *@param link = http://
+     *
+     * @return image
+     */
    public BufferedImage getImgByUrl(String link) throws IOException {
        BufferedImage image =null;
        try {
