@@ -55,7 +55,7 @@ public class ApartmentForm extends BaseForm {
         return parse;
     }
 
-    **
+    /**
      * ssertCoordinate()
      *this method assert coordinate in the catalog with coordinate in other site
      *@param arseOnliner 
