@@ -27,10 +27,24 @@ public class ProductForm extends BaseForm {
         super(By.xpath("//h3[contains(text(),'Описание')] "),"Product.Logo");
     }
 
+     /**
+     * clickSuggestions
+     *this method clicks on the button the offer from the sellers
+     *
+     *
+     * @return void
+     */
     public void clickSuggestions(){
         suggestions.clickAndWait();
     }
-
+     
+     /**
+     * getUrlImgProduct()
+     *this method returns the link to product images
+     *
+     *
+     * @return ArrayList<String>
+     */
     public ArrayList<String> getUrlImgProduct(){
 
         ArrayList<String> urlList= new ArrayList<>();
@@ -43,7 +57,14 @@ public class ProductForm extends BaseForm {
         return urlList;
     }
 
-    
+     /**
+     * AssertImg()
+     *this method compares two images pixel by
+     *
+     * @param path
+     *
+     * @return void
+     */
     public void AssertImg(String path) throws IOException {
         AssertImage assertImage = new AssertImage();
         String jarPath = ProductForm.class.getProtectionDomain().getCodeSource().getLocation().getPath();
@@ -59,9 +80,7 @@ public class ProductForm extends BaseForm {
 
     }
 
-    public  void AsserMainParam(){
-
-    }
+   
 
 
 }
