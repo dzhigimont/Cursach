@@ -23,7 +23,15 @@ public class FleaMarketForm extends BaseForm{
     public FleaMarketForm(){
         super(By.xpath("//h1[contains(text(),'Барахолка')]"),"FleaMarket.Logo");
     }
-
+    
+    /**
+     * navigate
+     *this method clicks on the button with the corresponding name
+     *
+     * @param button
+     *
+     * @return void
+     */
 
     public void navigate(String button){
 
