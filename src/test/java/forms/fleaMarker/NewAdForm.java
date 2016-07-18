@@ -6,9 +6,7 @@ import webdriver.elements.Button;
 import webdriver.elements.CheckBoxList;
 import webdriver.elements.TextBox;
 
-/**
- * Created by kristinka on 14.07.2016.
- */
+
 public class NewAdForm extends BaseForm{
 
     private Button sellButton = new Button(By.xpath("//a[contains(text(),'Продам')]")," Sell");
@@ -34,7 +32,14 @@ public class NewAdForm extends BaseForm{
         super(By.xpath("//h1[contains(text(),'Новое объявление')]"),"NewAd.Logo");
     }
 
-
+    /**
+     * fillMessage
+     *this method fill New Ad form by param
+     *
+     * 
+     *
+     * @return void
+     */
     public void fillMessage(String category,String section,String head,String location,String itemDescription,
                             String rate,String currency,Boolean auction ){
 
@@ -75,6 +80,14 @@ public class NewAdForm extends BaseForm{
 
     }
 
+     /**
+     * addNewAd()
+     *this method add New Ad 
+     *
+     * 
+     *
+     * @return void
+     */
     public void addNewAd(){
         addNewAd.clickAndWait();
     }
