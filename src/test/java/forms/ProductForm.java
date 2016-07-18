@@ -45,6 +45,10 @@ public class ProductForm extends BaseForm {
 
     public void AssertImg(String path) throws IOException {
         AssertImage assertImage = new AssertImage();
+        String jarPath = ProductForm.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        System.out.println(jarPath);
+        String jPath = jarPath.replace("\\src\\test\form","");
+        System.out.println(jPath);
         int i = 1;
         ArrayList<String> url  =  getUrlImgProduct();
         for (String s:url){
