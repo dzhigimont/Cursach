@@ -11,7 +11,7 @@ public class NewsForm extends BaseForm {
     private Label commentNumber = new Label(By.xpath("//a[@class='comment-icon-1']/span"),"commentNumber");
     private ListOfPages commentList = new ListOfPages(By.xpath("//span[@class='date']"),"commentList");
     public NewsForm() {
-        super(By.xpath("//h2[contains(text(),'Лучший комментарий')]"), "News.Logo");
+        super(By.xpath("//h3[contains(text(),'Обсуждение')]"), "News.Logo");
     }
     public void assertComments(){
         commentNumber.navigateToElement();
