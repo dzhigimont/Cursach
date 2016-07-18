@@ -2,62 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestCatalogTV" >
 
-	<test name="test1" >
-		<parameter name="search" value="Iphone 6"/>
-
-		<classes>
-			<class name="tests.TestAddProductInTheCart"/>
-		</classes>
-	</test>
-
-	<test name=" test2" >
-		<parameter name="userName" value="don-simon"/>
-		<parameter name="userPass" value="dimaloh656"/>
-		<parameter name="category" value="Продам"/>
-		<parameter name="section" value="Ноутбуки"/>
-		<parameter name="head" value="Продам ноутбук"/>
-		<parameter name="location" value="Минск"/>
-		<parameter name="itemDescription" value="Хороший ноутбук не бит не крашен."/>
-		<parameter name="rate" value="1000000"/>
-		<parameter name="currency" value="старые рубли"/>
-		<parameter name="auction" value="false"/>
-
-		<classes>
-			<class name="tests.TestNewAd"/>
-		</classes>
-
-	</test>
-
-	<test name="test3" >
-
-		<classes>
-			<class name="tests.TestCountReviews"/>
-		</classes>
-
-	</test>
-
-	<test name="test4" >
-
-		<classes>
-			<class name="tests.TestApartmentAddressViewByMap"/>
-		</classes>
-
-	</test>
-
-	<test name="test5" >
-		<parameter name="userName" value="don-simon"/>
-		<parameter name="userPass" value="dimaloh656"/>
-		<parameter name="userNameSend" value="Carbonat"/>
-		<parameter name="head" value="Тестовое сообщение"/>
-		<parameter name="textMessage" value="Привет, это тестовое сообщение."/>
-
-		<classes>
-			<class name="tests.TestSentMessage"/>
-		</classes>
-
-	</test>
-
-
+	
 	<test name="test6" >
 		<parameter name="search" value="пылесос Samsung SC6573"/>
 		<parameter name="path" value="target\\test-classes\\img\\Samsung SC6573"/>
