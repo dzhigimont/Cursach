@@ -46,13 +46,12 @@ public class ProductForm extends BaseForm {
     public void AssertImg(String path) throws IOException {
         AssertImage assertImage = new AssertImage();
         String jarPath = ProductForm.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-        System.out.println(jarPath);
-        String jPath = jarPath.replace("\\src\\test\form","");
+        String jPath = jarPath + path;
         System.out.println(jPath);
         int i = 1;
         ArrayList<String> url  =  getUrlImgProduct();
         for (String s:url){
-            doAssertFail(assertImage.assertImage(path+i+".jpg",assertImage.getImgByUrl(s)),
+            doAssertFail(assertImage.assertImage(jPath+i+".jpg",assertImage.getImgByUrl(s)),
                     path+"/"+i+".jpg"+" image fully complies with "+s,
                     path+"/"+i+".jpg"+" image fully not complies with "+s);
             i++;
