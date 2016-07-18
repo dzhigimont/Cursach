@@ -252,7 +252,10 @@ public abstract class BaseElement extends BaseEntity {
 		}
 
 	};
-
+	/**
+	 * 
+	 * simulates mouse movement;
+	 */
 	public void mouseOver() {
 		waitForIsElementPresent();
 		if (browser.getDriver() instanceof JavascriptExecutor) {
@@ -261,7 +264,11 @@ public abstract class BaseElement extends BaseEntity {
 		Actions actions = new Actions(browser.getDriver());
 		actions.moveToElement(element).build().perform();
 	}
-
+	/**
+	 * 
+	 * simulates mouse movement;
+	 * and click
+	 */
 	public void mouseOverAndClick() {
 		waitForIsElementPresent();
 		if (browser.getDriver() instanceof JavascriptExecutor) {
@@ -273,7 +280,11 @@ public abstract class BaseElement extends BaseEntity {
 
 
 
-
+	/**
+	 * 
+	 * explicitWaits element
+	 * 
+	 */
 	public void explicitWaits(){
 
 		WebElement dynamicElement = (new WebDriverWait(browser.getDriver(), 60))
