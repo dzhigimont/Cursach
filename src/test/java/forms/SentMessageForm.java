@@ -12,12 +12,25 @@ public class SentMessageForm extends BaseForm {
     Label header =new Label(By.xpath("//h2[@class='pmmsg__subj']"),"Header");
     Label textMessage =new Label(By.xpath("//div[@class='msgpost-txt-i']/p"),"Header");
     Button delMessage = new Button(By.xpath("//a[contains(text(),'Удалить')]"),"DelMessage");
-
+   
+    /**
+     *
+     *this Class constructor
+     *
+     */
     public SentMessageForm() {
         super(By.xpath("//a[contains(text(),'Удалить')]"),"SentMessageForm" );
     }
 
-
+    /**
+     * assertSentMessage()
+     *this method checks the correctness of filling the form sent message
+     *
+     * @param userName
+     * @param header
+     *@param text
+     * @return void
+     */
     public void assertSentMessage(String userName,String header,String text){
 
         String msgPass = " this item meets the requirements ";
@@ -33,7 +46,12 @@ public class SentMessageForm extends BaseForm {
                 textMessage.getText()+msgFail+text);
 
     }
-
+    
+    /**
+     * delMessage()
+     *this method delete sent Message
+     * @return void
+     */
     public void delMessage(){
         delMessage.clickAndWait();
     }
