@@ -54,5 +54,6 @@ public class SentMessageForm extends BaseForm {
      */
     public void delMessage(){
         delMessage.clickAndWait();
+          browser.goToAlertAndAccept();
     }
 }
