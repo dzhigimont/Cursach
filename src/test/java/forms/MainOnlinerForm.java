@@ -126,7 +126,7 @@ public class MainOnlinerForm extends BaseForm {
 
     public void productSearch(String product){
         search.type(product);
-        browser.goToFrame(5);
+        browser.goToFrame(4);
     }
 
 
