@@ -230,6 +230,17 @@ import com.google.common.base.Strings;
 	public  void goToFrame(String str){
 		driver.switchTo().frame(str);
 	}
+	
+	/**  goToAlertAndAccept
+	 * this method switch alert and click button "OK"
+	 */
+	public  void goToAlertAndAccept(){
+		try {
+			driver.switchTo().alert().accept();
+		} catch (NoAlertPresentException e) {
+		}
+	}
+
 
 
 
